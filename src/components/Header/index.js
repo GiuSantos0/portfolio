@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: '#2c2c2c',
+    backgroundColor: '#1a1a1a',
     zIndex:'20',
 
   },
