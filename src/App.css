@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
 .App {
   text-align: center;
 }
@@ -24,5 +26,8 @@
 body {
   background: #282c34 url('./assets/background.png') no-repeat;
   background-size: cover;
-  color: white !important;
+  color: #ffb503 !important;
+  font-weight: bold;
+  font-family: 'Fira Code', monospace !important;
+
 }

@@ -58,7 +58,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       width: theme.spacing(9) + 1,
     },
-    backgroundColor: '#2c2c2c',
+    backgroundColor: '#1a1a1a',
     color: 'white',
   },
   toolbar: {
@@ -75,6 +75,10 @@ const useStyles = makeStyles(theme => ({
   icons:{
     color:'#ffb503',
     paddingLeft:'25%'
+  },
+  formatacao:{
+    fontFamily: 'Fira Code, monospace !important'
+
   }
 }));
 
@@ -137,7 +141,7 @@ export default function MiniDrawer() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Typography paragraph>
+        <Typography paragraph className={classes.formatacao}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
           facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
@@ -149,7 +153,7 @@ export default function MiniDrawer() {
           arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
           donec massa sapien faucibus et molestie ac.
         </Typography>
-        <Typography paragraph>
+        <Typography paragraph className={classes.formatacao}>
           Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
           facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
           tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
