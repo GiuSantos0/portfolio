@@ -47,6 +47,50 @@ a {
 
 }
 
+@media screen and (max-width:500px){
+      .line {
+            position: relative;
+            width: 185px !important;
+            margin: auto;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            overflow: hidden;
+            
+      }
+
+      h1 {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+      .anim-typewriter {
+            animation: typewritermobile 10s steps(15) 500ms,
+            blinkTextCursor !important;
+      }
+
+      @keyframes typewritermobile {
+            0% {
+                  width: 0px;
+            }
+            10% {
+                  width: 0px;
+            }
+            25% {
+                  width: 185px;  
+            }
+            75% {
+                  width: 185px;
+            }
+            90% {
+                  width: 185px
+            }
+            100% {
+                  width: 185px !important;
+                  animation-play-state: paused;
+            }
+      }
+}
+
 /*Animação*/
 .anim-typewriter {
       animation: typewriter 10s steps(22) 500ms,

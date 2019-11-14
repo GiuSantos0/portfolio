@@ -8,9 +8,9 @@ import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import PersonOutlinedIcon from '@material-ui/icons/PersonOutlined';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -37,8 +37,12 @@ const useStyles = makeStyles(theme => ({
 
   },
   menuButton: {
-    width: "30px",
-    margin:"10px"
+    margin:"10%",
+    width: theme.spacing(4) + 1,
+    [theme.breakpoints.up('sm')]: {
+      width: theme.spacing(6) + 1,
+    },
+    
   },
   drawer: {
     zIndex:'20',
@@ -75,7 +79,10 @@ const useStyles = makeStyles(theme => ({
   },
   icons:{
     color:'#ffb503',
-    paddingLeft:'25%'
+    padding:theme.spacing(0) + 1,
+    [theme.breakpoints.up('sm')]: {
+      padding: theme.spacing(1) + 1,
+    },
   },
   formatacao:{
     fontFamily: 'Fira Code, monospace !important'
@@ -123,22 +130,32 @@ export default function Sidenav(props) {
         </div>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon className={classes.icons}>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+          <ListItem button key='Home' component="button" href="/">
+              <ListItemIcon className={classes.icons}>
+                <HomeOutlinedIcon /> 
+                </ListItemIcon>
+              <ListItemText primary='Home' />
             </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon className={classes.icons}>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+            <ListItem button key='Sobre' component="button" href="/AboutMe">
+              <ListItemIcon className={classes.icons}>
+                <PersonOutlinedIcon /> 
+                </ListItemIcon>
+              <ListItemText primary='Home' />
             </ListItem>
-          ))}
+            <ListItem button key='Skills' component="button" href="/Skills">
+              <ListItemIcon className={classes.icons}>
+                <SettingsOutlinedIcon /> 
+                </ListItemIcon>
+              <ListItemText primary='Home' />
+            </ListItem>
+            <ListItem button key='Home' title="home" component="button" href="/">
+              <ListItemIcon className={classes.icons}>
+                <HomeOutlinedIcon /> 
+                </ListItemIcon>
+              <ListItemText primary='Home' />
+            </ListItem>
         </List>
+      
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
