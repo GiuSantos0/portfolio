@@ -1,0 +1,83 @@
+h1 {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: rgb(253, 0, 253);
+    animation: opacity 5s 500ms;
+}
+
+a {
+    color: rgb(253, 0, 253);
+    animation: opacity 5s 500ms;
+    text-decoration: none;
+}
+
+.avatar{
+    width: 250px !important;
+    height: 250px !important;
+    border-top: 3px solid #ffb503;
+    border-bottom: 3px solid rgb(253, 0, 253);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    animation: opacity 5s 500ms;
+
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+        animation-play-state: paused, running;
+
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+.line {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+/*Animação*/
+.anim-typewriter {
+      animation: typewriter 10s steps(22) 500ms,
+      blinkTextCursor;
+}
+@keyframes typewriter {
+      0% {
+            width: 0px;
+      }
+      10% {
+            width: 0px;
+      }
+      25% {
+            width: 1000px;
+      }
+      75% {
+            width: 1000px;
+      }
+      90% {
+            width: 1000px;
+      }
+      100% {
+            width: 1000px;
+            animation-play-state: paused;
+      }
+}
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
