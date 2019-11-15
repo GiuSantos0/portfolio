@@ -130,7 +130,7 @@ export default function Sidenav(props) {
         </div>
         <Divider />
         <List>
-          <ListItem button key='Home' component="button" href="/">
+          <ListItem button key='Home' component="button" href="/" className='active'>
               <ListItemIcon className={classes.icons}>
                 <HomeOutlinedIcon /> 
                 </ListItemIcon>

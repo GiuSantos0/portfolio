@@ -1,0 +1,125 @@
+.linkYellow {
+    color: rgb(253, 186, 0);
+    animation: opacity 5s 500ms;
+    text-decoration: none;
+}
+
+p {
+    color: rgb(255, 0, 255);
+    font-weight: 700;
+    animation: opacity 5s 500ms;
+
+}
+
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+        animation-play-state: paused, running;
+
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+.line {
+    position: relative;
+    width: 270px;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+@media screen and (max-width:500px){
+      .line {
+            position: relative;
+            width: 185px !important;
+            margin: auto;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            overflow: hidden;
+            
+      }
+
+      h1 {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+   
+
+      @keyframes typewritermobile {
+            0% {
+                  width: 0px;
+            }
+            10% {
+                  width: 0px;
+            }
+            25% {
+                  width: 185px;  
+            }
+            75% {
+                  width: 185px;
+            }
+            90% {
+                  width: 185px
+            }
+            100% {
+                  width: 185px !important;
+                  animation-play-state: paused;
+            }
+      }
+}
+
+/*Animação*/
+.typewriterAbouMe {
+      animation: typewriterAbouMe 5s steps(10) 500ms,
+      blinkTextCursor;
+      float: left;
+}
+@keyframes typewriterAbouMe {
+      0% {
+            width: 0px;
+      }
+      10% {
+            width: 0px;
+      }
+      25% {
+            width: 270px;
+      }
+      75% {
+            width: 270px;
+      }
+      90% {
+            width: 270px;
+      }
+      100% {
+            width: 270px;
+            animation-play-state: paused;
+      }
+}
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+.logo {
+    width: 700px;
+    transform: rotate(15deg);
+    background-size: 120%;
+    position: -10% 10%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.displayInline{
+    display: inline-block;
+}
