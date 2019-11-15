@@ -1,0 +1,15 @@
+.imgModal {
+    width: 500px;
+    height: 100%;
+}
+.MuiGridListTile-tile {
+    border-radius: 20px;
+    border: 2px solid rgb(253, 0, 253);
+    overflow: hidden;
+
+}
+
+
+body{
+    overflow: auto;
+}

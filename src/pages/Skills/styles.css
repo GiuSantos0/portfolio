@@ -1,3 +1,5 @@
 .marginTop{
     margin-top: 80px;
+    animation: opacity 5s 500ms;
+
 }

@@ -11,6 +11,7 @@ import Divider from '@material-ui/core/Divider';
 import PersonOutlinedIcon from '@material-ui/icons/PersonOutlined';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
+import VisibilityOutlinedIcon from '@material-ui/icons/VisibilityOutlined';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -140,19 +141,19 @@ export default function Sidenav(props) {
               <ListItemIcon className={classes.icons}>
                 <PersonOutlinedIcon /> 
                 </ListItemIcon>
-              <ListItemText primary='Home' />
+              <ListItemText primary='About' />
             </ListItem>
             <ListItem button key='Skills' component="button" href="/Skills">
               <ListItemIcon className={classes.icons}>
                 <SettingsOutlinedIcon /> 
                 </ListItemIcon>
-              <ListItemText primary='Home' />
+              <ListItemText primary='Skills' />
             </ListItem>
-            <ListItem button key='Home' title="home" component="button" href="/">
+            <ListItem button key='My Job' title="My Job" component="button" href="/MyJob">
               <ListItemIcon className={classes.icons}>
-                <HomeOutlinedIcon /> 
+                <VisibilityOutlinedIcon /> 
                 </ListItemIcon>
-              <ListItemText primary='Home' />
+              <ListItemText primary='My Job' />
             </ListItem>
         </List>
       
