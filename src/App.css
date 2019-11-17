@@ -32,10 +32,10 @@ body {
 
 }
 
-@media screen and (max-width:1200px){
+@media screen and (min-width:700px){
   body{
      background-position: 81% 22%;
-     background-size: 410% ;
+     background-size: cover ;
      position: relative;
   }
 }

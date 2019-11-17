@@ -13,7 +13,7 @@ export default function Skills(){
         <>
         <Grid container>
             <Grid item sm={12} md={6} lg={6}>
-                    <h1 className='typewriterAbouMe line'>
+                    <h1 className='typewriterSkills line'>
                         Skills
                     </h1> 
                     <p className='displayInline'>

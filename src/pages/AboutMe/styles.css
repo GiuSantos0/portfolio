@@ -1,6 +1,8 @@
 .linkYellow {
     color: rgb(253, 186, 0);
     animation: opacity 5s 500ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
     text-decoration: none;
 }
 
@@ -8,6 +10,8 @@ p {
     color: rgb(255, 0, 255);
     font-weight: 700;
     animation: opacity 5s 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 
 }
 
@@ -23,20 +27,22 @@ p {
 
     }
 }
-.line {
+.lineAboutMe {
     position: relative;
-    width: 270px;
+    width: 0px;
     margin: auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     white-space: nowrap;
     overflow: hidden;
+    animation-fill-mode: forwards;
+
 
 }
 
 @media screen and (max-width:500px){
-      .line {
+      .lineAboutMe {
             position: relative;
-            width: 185px !important;
+            width: 0px !important;
             margin: auto;
             border-right: 2px solid rgba(255, 255, 255, 0.75);
             overflow: hidden;
@@ -59,16 +65,16 @@ p {
                   width: 0px;
             }
             25% {
-                  width: 185px;  
+                  width: 150px;  
             }
             75% {
-                  width: 185px;
+                  width: 150px;
             }
             90% {
-                  width: 185px
+                  width: 150px
             }
             100% {
-                  width: 185px !important;
+                  width: 150px !important;
                   animation-play-state: paused;
             }
       }
@@ -79,6 +85,8 @@ p {
       animation: typewriterAbouMe 5s steps(10) 500ms,
       blinkTextCursor;
       float: left;
+      animation-fill-mode: forwards;
+
 }
 @keyframes typewriterAbouMe {
       0% {
@@ -88,16 +96,16 @@ p {
             width: 0px;
       }
       25% {
-            width: 270px;
+            width: 150px;
       }
       75% {
-            width: 270px;
+            width: 150px;
       }
       90% {
-            width: 270px;
+            width: 150px;
       }
       100% {
-            width: 270px;
+            width: 150px;
             animation-play-state: paused;
       }
 }
@@ -114,12 +122,19 @@ p {
     transform: rotate(15deg);
     background-size: 120%;
     position: -10% 10%;
+    animation: opacity 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-body {
-    overflow: hidden;
+.noOverflow {
+    overflow: hidden !important;
 }
 
 .displayInline{
     display: inline-block;
+    color: rgb(255, 0, 255);
+    animation: opacity 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }

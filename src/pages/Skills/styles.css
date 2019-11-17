@@ -1,5 +1,149 @@
 .marginTop{
     margin-top: 80px;
     animation: opacity 5s 500ms;
+    opacity: 0;
 
+}
+
+body {
+    overflow: auto !important;
+}
+
+p{
+    color:rgb(255, 0, 255);
+    animation: opacity 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+a:link{
+    color: #ffb503;
+}
+
+.linkYellow{
+    color: #ffb503;
+}
+
+
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+        animation-play-state: paused, running;
+
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+.line {
+    position: relative;
+    width: 0px !important;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+
+}
+
+@media screen and (max-width:500px){
+      .line {
+            position: relative;
+            width: 0px !important;
+            margin: auto;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            overflow: hidden;
+            animation-fill-mode: forwards;
+            
+      }
+
+      h1 {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 0;
+            float:left;
+            
+        }
+
+      .typewriterSkills {
+            width:0px;
+            animation: typewritermobile 10s steps(15) 500ms,
+            blinkTextCursor !important;
+            animation-fill-mode: forwards;
+            float: left;
+      }
+
+      @keyframes typewritermobile {
+            0% {
+                  width: 0px;
+            }
+            10% {
+                  width: 0px;
+            }
+            25% {
+                  width: 100px;  
+            }
+            75% {
+                  width: 100px;
+            }
+            90% {
+                  width: 100px
+            }
+            100% {
+                  width: 100px !important;
+                  animation-play-state: paused;
+            }
+      }
+}
+
+/*Animação*/
+.typewriterSkills{
+    animation: typewriter 3s steps(5) 1000ms,
+    blinkTextCursor;
+    animation-fill-mode: forwards;    
+    display: inline-block;
+    float: left;
+
+
+}
+@keyframes typewriter {
+      0% {
+            width: 0px;
+      }
+      10% {
+            width: 0px;
+      }
+      25% {
+            width: 110px;
+      }
+      75% {
+            width: 110px;
+      }
+      90% {
+            width: 110px;
+      }
+      100% {
+            width: 110px;
+            animation-play-state: paused;
+
+      }
+}
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+.displayInline{
+    display: inline-block;
+    color: rgb(255, 0, 255);
+    animation: opacity 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }

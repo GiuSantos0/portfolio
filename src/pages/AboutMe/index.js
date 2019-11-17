@@ -10,9 +10,9 @@ import Logo from '../../assets/logo.png'
 export default function AboutMe(){
     return (
         <>
-        <Grid container>
+        <Grid container className='noOverflow'>
             <Grid item sm={12} md={6} lg={6}>
-                    <h1 className='typewriterAbouMe line'>
+                    <h1 className='typewriterAbouMe lineAboutMe'>
                         About Me
                     </h1>
                     <Divider/>

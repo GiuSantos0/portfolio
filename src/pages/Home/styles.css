@@ -2,17 +2,29 @@ h1 {
     font-size: 50px;
     text-align: left;
     margin-bottom: 0;
+    width: 0px;
 }
 
 h4 {
     color: rgb(253, 0, 253);
     animation: opacity 5s 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+p {
+    color: rgb(253, 0, 253);
+    animation: opacity 5s 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 a {
     color: rgb(253, 0, 253);
     animation: opacity 5s 500ms;
+    animation-fill-mode: forwards;
+    animation-delay:  2s;
     text-decoration: none;
+    opacity: 0;
 }
 
 .avatar{
@@ -22,7 +34,12 @@ a {
     border-bottom: 3px solid rgb(253, 0, 253);
     margin-top: 2%;
     margin-bottom: 2%;
-    animation: opacity 5s 500ms;
+    animation: opacity 5s 500ms  ;
+    animation-iteration-count: inherit;
+    animation-delay:  1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
 
 }
 
@@ -39,21 +56,23 @@ a {
 }
 .line {
     position: relative;
-    width: 1000px;
+    width: 0px !important;
     margin: auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     white-space: nowrap;
     overflow: hidden;
+    animation-fill-mode: forwards;
 
 }
 
 @media screen and (max-width:500px){
       .line {
             position: relative;
-            width: 185px !important;
+            width: 0px !important;
             margin: auto;
             border-right: 2px solid rgba(255, 255, 255, 0.75);
             overflow: hidden;
+            animation-fill-mode: forwards;
             
       }
 
@@ -64,8 +83,10 @@ a {
         }
 
       .anim-typewriter {
+            width:0px;
             animation: typewritermobile 10s steps(15) 500ms,
             blinkTextCursor !important;
+            animation-fill-mode: forwards;
       }
 
       @keyframes typewritermobile {
@@ -93,8 +114,10 @@ a {
 
 /*Animação*/
 .anim-typewriter {
-      animation: typewriter 10s steps(22) 500ms,
-      blinkTextCursor;
+    animation: typewriter 10s steps(22) 500ms,
+    blinkTextCursor;
+    animation-fill-mode: forwards;
+    width:0px;
 }
 @keyframes typewriter {
       0% {

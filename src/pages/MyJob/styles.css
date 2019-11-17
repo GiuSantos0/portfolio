@@ -11,5 +11,6 @@
 
 
 body{
-    overflow: auto;
+    overflow: auto !important;
 }
+
