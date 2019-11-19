@@ -1,13 +1,17 @@
 import React from 'react';
-import { CircularProgress } from '@material-ui/core';
+import { LinearProgress } from '@material-ui/core';
 import Logo from "../../assets/logo.png";
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
 
 export default function Loader(){
     return(
         <>
-            <img className='logoLoader'src={Logo}/> 
+            <Grid container justify="center" alignItems="center">
+                <Avatar className='logoLoader'src={Logo}/>
+            </Grid>
             <h4>is thinking</h4>
-            <CircularProgress variant="query" className='loader'color="secondary" />
+            <LinearProgress variant="query" className='loader'color="secondary" />
         </>
     )
 }

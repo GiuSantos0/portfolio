@@ -7,20 +7,20 @@ h1 {
 
 h4 {
     color: rgb(253, 0, 253);
-    animation: opacity 5s 500ms;
+    animation: opacity 2s 500ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 p {
     color: rgb(253, 0, 253);
-    animation: opacity 5s 500ms;
+    animation: opacity 2s 500ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 a {
     color: rgb(253, 0, 253);
-    animation: opacity 5s 500ms;
+    animation: opacity 2s 500ms;
     animation-fill-mode: forwards;
     animation-delay:  2s;
     text-decoration: none;
@@ -84,7 +84,7 @@ a {
 
       .anim-typewriter {
             width:0px;
-            animation: typewritermobile 10s steps(15) 500ms,
+            animation: typewritermobile 2s steps(15) 500ms,
             blinkTextCursor !important;
             animation-fill-mode: forwards;
       }

@@ -70,7 +70,7 @@ export default function AboutMe(){
     return (
         <>
             <Grid container>
-                <Grid item sm={12} md={12} lg={12}>
+                <Grid item sm={11} md={11} lg={11}>
                         <h1 className='typewriterAbouMe line'>
                             My Jobs
                         </h1>

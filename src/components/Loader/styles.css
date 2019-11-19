@@ -1,9 +1,17 @@
 .loader{
     background: rgb(255, 238, 0);
-    width: 100px;
 }
 
 .logoLoader{
-    width: 40px;
-    height: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.MuiLinearProgress-barColorPrimary	{
+    background: rgb(255, 238, 0);
+}
+
+.MuiLinearProgress-root	 {
+    width: 100px;
+
 }
