@@ -1,14 +1,20 @@
 import React from 'react';
-import Header from './components/Header';
 import './App.css';
 import Routes from './routes';
+
+import Loading from './components/Loader';
+
 
 function App() {
   return (
     <div className="App">
-     <Header conteudo={<Routes/>}/>
+        <header>
+          <Loading/>
+        </header>
+        {/* <Routes/> */}
     </div>
   );
 }
+
 
 export default App;

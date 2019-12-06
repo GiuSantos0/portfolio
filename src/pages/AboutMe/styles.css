@@ -35,6 +35,7 @@ p {
     white-space: nowrap;
     overflow: hidden;
     animation-fill-mode: forwards;
+    
 
 
 }
@@ -120,7 +121,7 @@ p {
 .logo {
     width: 700px;
     transform: rotate(15deg);
-    background-size: 120%;
+    /* background-size: cover; */
     position: -10% 10%;
     animation: opacity 5s;
     animation-fill-mode: forwards;

@@ -42,7 +42,11 @@ a {
 
 
 }
+.makeStyles-icons-8{
+      animation: opacity 5s 500ms;
+      animation-fill-mode: forwards;
 
+}
 @keyframes opacity {
     from {
         opacity: 0;

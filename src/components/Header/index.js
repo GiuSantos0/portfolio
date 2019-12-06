@@ -84,6 +84,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       padding: theme.spacing(1) + 1,
     },
+
   },
   formatacao:{
     fontFamily: 'Fira Code, monospace !important'

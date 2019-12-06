@@ -25,7 +25,7 @@
 
 body {
   background: #282c34 url('./assets/background.png') no-repeat;
-  background-size: cover;
+  background-size: inherit;
   color: #ffb503 !important;
   font-weight: bold;
   font-family: 'Fira Code', monospace !important;
@@ -35,7 +35,7 @@ body {
 @media screen and (min-width:700px){
   body{
      background-position: 81% 22%;
-     background-size: cover ;
+     /* background-size: inherit ; */
      position: relative;
   }
 }

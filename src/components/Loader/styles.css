@@ -1,9 +1,6 @@
-.loader{
-    background: rgb(255, 238, 0);
-    width: 100px;
-}
 
 .logoLoader{
-    width: 40px;
+    padding-top: 100px;
+    width: 80px;
     height: 100%;
 }
