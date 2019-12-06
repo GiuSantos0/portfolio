@@ -1,6 +1,8 @@
 // import React from 'react';
 // import { CircularProgress } from '@material-ui/core';
 import Logo from "../../assets/logo.png";
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
 
 // export default function Loader(){
 //     return(

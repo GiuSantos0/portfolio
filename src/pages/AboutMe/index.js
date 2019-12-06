@@ -11,7 +11,7 @@ export default function AboutMe(){
     return (
         <>
         <Grid container className='noOverflow'>
-            <Grid item sm={12} md={6} lg={6}>
+            <Grid item sm={11} md={6} lg={6}>
                     <h1 className='typewriterAbouMe lineAboutMe'>
                         About Me
                     </h1>
@@ -19,8 +19,7 @@ export default function AboutMe(){
  
                     <p className='displayInline'>
                         Hello, my name is Giulia Santos and I'm a Web Developer focused in Front-End. 
-                         In last months I'm building a project very important for 
-                         <a className='linkYellow displayInline'href="https://gfai.com.br/" target="_blank" > 
+                         In last months I'm building a project very important for <a className='linkYellow'href="https://gfai.com.br/" target="_blank" > 
                             GFAI 
                          </a>, the DashPlan.
                     </p>

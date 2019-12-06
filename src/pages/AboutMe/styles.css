@@ -1,6 +1,6 @@
-.linkYellow {
+a.linkYellow {
     color: rgb(253, 186, 0);
-    animation: opacity 5s 500ms;
+    animation: opacity 2s 500ms;
     opacity: 0;
     animation-fill-mode: forwards;
     text-decoration: none;
@@ -9,7 +9,7 @@
 p {
     color: rgb(255, 0, 255);
     font-weight: 700;
-    animation: opacity 5s 500ms;
+    animation: opacity 2s 500ms;
     animation-fill-mode: forwards;
     opacity: 0;
 
@@ -41,6 +41,15 @@ p {
 }
 
 @media screen and (max-width:500px){
+    .logo {
+        width: 200px !important;
+        transform: rotate(15deg);
+        background-size: 120%;
+        position: -10% 10%;
+        animation: opacity 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
       .lineAboutMe {
             position: relative;
             width: 0px !important;
@@ -123,7 +132,7 @@ p {
     transform: rotate(15deg);
     /* background-size: cover; */
     position: -10% 10%;
-    animation: opacity 5s;
+    animation: opacity 2s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -135,7 +144,7 @@ p {
 .displayInline{
     display: inline-block;
     color: rgb(255, 0, 255);
-    animation: opacity 5s;
+    animation: opacity 2s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
