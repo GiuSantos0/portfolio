@@ -23,13 +23,15 @@
   color: #09d3ac;
 }
 
-body {
+html {
   background: #282c34 url('./assets/background.png') no-repeat;
-  background-size: inherit;
+}
+
+body {
+  background-color: transparent !important;
   color: #ffb503 !important;
   font-weight: bold;
   font-family: 'Fira Code', monospace !important;
-
 }
 
 @media screen and (min-width:700px){
