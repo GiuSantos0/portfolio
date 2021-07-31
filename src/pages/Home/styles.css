@@ -60,7 +60,7 @@ a {
 }
 .line {
     position: relative;
-    width: 0px !important;
+    width: 0px;
     margin: auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     white-space: nowrap;
@@ -72,7 +72,7 @@ a {
 @media screen and (max-width:500px){
       .line {
             position: relative;
-            width: 0px !important;
+            width: 0px;
             margin: auto;
             border-right: 2px solid rgba(255, 255, 255, 0.75);
             overflow: hidden;
