@@ -1,11 +1,6 @@
 import React from 'react';
-import Sidenav from '../../components/Header';
 import './styles.css';
-import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
-import Divider from '@material-ui/core/Divider';
-import Eu from '../../assets/eu.jpeg';
-import Logo from '../../assets/logo.png';
 import ChartSkills from '../../components/ChartSkills';
 
 export default function Skills(){

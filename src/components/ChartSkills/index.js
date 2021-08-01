@@ -8,14 +8,14 @@ export default class ChartSkills extends Component {
         const myChartRef = this.chartRef.current.getContext("2d");
         
         new Chart(myChartRef, {
-            type: "doughnut",
+            type: "bar",
             data: {
                 //Bring in data
-                labels: ["Bootstrap", "HTML", "CSS", "JavaScript", "React", "Photoshop"],
+                labels: ["Bootstrap", "HTML", "CSS", "JavaScript", "React", ".NET Core", "Photoshop"],
                 datasets: [
                     {
                         label: "Skills",
-                        data: [90, 95, 80, 40, 45,95],
+                        data: [90, 95, 80, 70, 100, 60, 95],
                         backgroundColor: [
                             "rgb(255, 0, 255)", 
                             "#ffb503", 
@@ -23,6 +23,7 @@ export default class ChartSkills extends Component {
                             "#ffb503", 
                             "rgb(255, 0, 255)",
                             "#ffb503", 
+                            "rgb(255, 0, 255)",
 
                         ],
                         borderWidth: 0
@@ -36,7 +37,7 @@ export default class ChartSkills extends Component {
                 },
                 scales: {
                     xAxes: [{
-                        ticks: { display: false },
+                        // ticks: { display: false },
                         gridLines: {
                             display: false,
                             drawBorder: false
@@ -46,7 +47,14 @@ export default class ChartSkills extends Component {
                 tooltips: {
                     displayColors: false,
                     
-                }
+                },
+                plugins: {
+                    tooltip: {
+                      callbacks: {
+                        footer: "janeiro",
+                      }
+                    }
+                  }
             },
             layout: {
                 padding: {

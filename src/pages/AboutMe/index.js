@@ -18,16 +18,22 @@ export default function AboutMe(){
                     <Divider/>
  
                     <p className='displayInline'>
-                        Hello, my name is Giulia Santos and I'm a Web Developer focused in Front-End. 
-                         In last months I'm building a project very important for <a className='linkYellow'href="https://gfai.com.br/" target="_blank" > 
-                            GFAI 
-                         </a>, the DashPlan.
+                        Hello, my name is Giulia Santos and I'm a Developer Full Stack focused in Front-End and freelance Designer. 
+                        Currently I work full time at Versatus HPC as a front developer and I love the coffee there so much that I don't plan to leave anytime soon!
+                        My current focus is on improving Node.js to get more full stack projects, so I'm doing the Bootcamp GoSack 12 by Rocketseat.
                     </p>
                     <p className='displayInline'>
-                        In my free time: I study, stay with my family, I am a cheerleader of 2 teams (1 university and the other All Star) and vice president of Atletica Fênix ​​FMU.
+                        In my free time: I study, stay with my family, I am a cheerleader of 2 teams (1 <a className='linkYellow' href="https://www.instagram.com/solarescheer/?hl=pt-br">university</a> and the other All Star, the <a className='linkYellow' href="https://www.instagram.com/spirit_oftitans">Spirit of Titans</a>). 
+                        {/* In my all star team I am part of the social media team and therefore I take care of the instagram design part and the team products! */}
                     </p>
                     <p className='displayInline'>
-                        Even with so much to do, I was always able to manage my time well and so I am open to freelance work both in the Design area (Logo Design, Design UX / UI) and Dev Front End.                    
+                        My main skills are Javascript (React, React Native and Node.js), CSS and Photoshop. I have knowledge in libraries like Bootstrap, Materialize, Material UI, DataTables, Cordova, DevExpress and Chart Js.
+                    </p>
+                    <p className='displayInline'>
+                        This portfolio it was my second project on React, I hope you are enjoying the experience of browsing it.                    
+                    </p>
+                    <p className='displayInline'>
+                        Visit my <a target="_blank" className='linkYellow' href='https://www.linkedin.com/in/giulia-santos-7a096a156/'>Linkedin</a> for more details or contact me for <a target="_blank" className='linkYellow' href='https://api.whatsapp.com/send?phone=5511949439313&text=Ola!'>Whatsapp</a>.
                     </p>
 
             </Grid>
