@@ -1,23 +1,27 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import PersonOutlinedIcon from '@material-ui/icons/PersonOutlined';
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
-import VisibilityOutlinedIcon from '@material-ui/icons/VisibilityOutlined';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import { 
+  makeStyles, 
+  useTheme,
+  Drawer,
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  List,
+  Typography,
+  Divider,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Tooltip
+} from '@material-ui/core';
+import {
+  PersonOutlined,
+  HomeOutlined,
+  SettingsOutlined,
+  VisibilityOutlined
+} from '@material-ui/icons';
+
 import Logo from "../../assets/logo2.png";
 
 const drawerWidth = 240;
@@ -132,30 +136,38 @@ export default function Sidenav(props) {
         </div>
         <Divider />
         <List>
-          <ListItem button key='Home' component="button" href="/" className='active'>
-              <ListItemIcon className={classes.icons}>
-                <HomeOutlinedIcon /> 
-                </ListItemIcon>
-              <ListItemText primary='Home' />
-            </ListItem>
-            <ListItem button key='Sobre' component="button" href="/AboutMe">
-              <ListItemIcon className={classes.icons}>
-                <PersonOutlinedIcon /> 
-                </ListItemIcon>
-              <ListItemText primary='About' />
-            </ListItem>
-            <ListItem button key='Skills' component="button" href="/Skills">
-              <ListItemIcon className={classes.icons}>
-                <SettingsOutlinedIcon /> 
-                </ListItemIcon>
-              <ListItemText primary='Skills' />
-            </ListItem>
-            <ListItem button key='My Job' title="My Job" component="button" href="/MyJob">
-              <ListItemIcon className={classes.icons}>
-                <VisibilityOutlinedIcon /> 
-                </ListItemIcon>
-              <ListItemText primary='My Job' />
-            </ListItem>
+            <Tooltip title="Home">
+              <ListItem button key='Home' component="button" href="/" className='active'>
+                <ListItemIcon className={classes.icons}>
+                  <HomeOutlined /> 
+                  </ListItemIcon>
+                <ListItemText primary='Home' />
+              </ListItem>
+            </Tooltip>
+            <Tooltip title="About">
+              <ListItem button key='About' component="button" href="/AboutMe">
+                <ListItemIcon className={classes.icons}>
+                  <PersonOutlined /> 
+                  </ListItemIcon>
+                <ListItemText primary='About' />
+              </ListItem>
+            </Tooltip>
+            <Tooltip title="Skills">
+              <ListItem button key='Skills' component="button" href="/Skills">
+                <ListItemIcon className={classes.icons}>
+                  <SettingsOutlined /> 
+                  </ListItemIcon>
+                <ListItemText primary='Skills' />
+              </ListItem>
+            </Tooltip>
+            <Tooltip title="My Job">
+              <ListItem button key='My Job' title="My Job" component="button" href="/MyJob">
+                <ListItemIcon className={classes.icons}>
+                  <VisibilityOutlined /> 
+                  </ListItemIcon>
+                <ListItemText primary='My Job' />
+              </ListItem>
+            </Tooltip>
         </List>
       
       </Drawer>

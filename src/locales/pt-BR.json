@@ -1,0 +1,8 @@
+{
+  "home": {
+    "hello": "Bem-vindo ao React"
+  },
+  "aboutme": {
+    "description": "Para começar, edite o arquivo <code>src/App.js</code> e salve para atualizar."
+  }
+}

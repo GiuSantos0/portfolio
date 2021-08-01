@@ -13,17 +13,14 @@ export default function Skills(){
         <>
         <Grid container>
             <Grid item sm={12} md={6} lg={6}>
-                    <h1 className='typewriterSkills line'>
+                    <h1 className='typewriterSkills lineSkills'>
                         Skills
                     </h1> 
                     <p className='displayInline'>
-                        My main skills are HTML, CSS, Javascript and Photoshop. I have knowledge in libraries like Bootstrap, Materialize, Material UI, DataTables, DevExpress and Chart Js.
+                        My main skills are Javascript (React, React Native and Node.js), CSS and Photoshop. I have knowledge in libraries like Bootstrap, Materialize, Material UI, DataTables, Cordova, DevExpress and Chart Js.
                     </p>
                     <p className='displayInline'>
-                        Lately what I've been studying the most is React Js, in the near future I would like to focus on React Native and Node Js.                    
-                    </p>
-                    <p className='displayInline'>
-                        This portfolio is my second project on React, I hope you are enjoying the experience of browsing it.                    
+                        This portfolio it was my second project on React, I hope you are enjoying the experience of browsing it.                    
                     </p>
                     <p className='displayInline'>
                         Visit my <a target="_blank" className='linkYellow' href='https://www.linkedin.com/in/giulia-santos-7a096a156/'>Linkedin</a> for more details or contact me for <a target="_blank" className='linkYellow' href='https://api.whatsapp.com/send?phone=5511949439313&text=Ola!'>Whatsapp</a>.

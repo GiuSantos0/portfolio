@@ -1,0 +1,9 @@
+.MuiDialog-paper {
+    background-color: #272626;
+    box-shadow: 3px 3px #c83ff8;
+    border: 1px solid #c83ff8;
+    color: #ffaf06;
+}
+.MuiTypography-h6 {
+    font-family: "Fira Code", monospace;
+}

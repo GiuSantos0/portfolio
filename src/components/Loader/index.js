@@ -57,8 +57,8 @@ export default class Loading extends React.Component {
         .then(json => this.setState({ loading: true }));
         setTimeout (() => {
             this.setState ({done: true});
-         }, 3000); 
-        }, 2000);
+         }, 2000); 
+        }, 1000);
         }
 
     render(){
