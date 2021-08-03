@@ -23,7 +23,7 @@ export default function Home() {
             <h4>
                 <a target="_blank" href='https://www.linkedin.com/in/giulia-santos-7a096a156/'>Linkedin </a>|
                 <a target="_blank" href='https://github.com/GiuSantos0'> Github </a>|
-                <a target="_blank" href={Curriculo}> Curriculo </a>
+                <a target="_blank" href={Curriculo}> Curriculo (outdated) </a>
             </h4>
 
         </>

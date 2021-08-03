@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "portfolio-b0f19"
+    "padrao": "portfolio-b0f19"
+  },
+  "targets": {
+    "portfolio-b0f19": {
+      "hosting": {
+        "prod": [
+          "giuliaferreira"
+        ]
+      }
+    }
   }
 }
